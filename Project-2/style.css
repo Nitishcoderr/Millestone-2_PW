@@ -25,7 +25,6 @@
 .box{
     margin: 0.5rem;
     display: flex;
-    /* align-items: center; */
     justify-content: center;
     flex-direction: column;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
@@ -33,6 +32,7 @@
     border-radius: 10px;
     background-color: #fff;
     color: black;
+    width: 280px;
 }
 .box:hover{
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -61,12 +61,15 @@ padding: 0.3rem;
 
 .movie-about h2{
     text-align: center;
+    font-size: 14px;
     }
-.movie-about p{
-    font-size: 13px;
-    color: grey;
+
+.watch-btn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
-.movie-about button{
+.watch-btn button{
     border: none;
     outline: navajowhite;
     padding: 0.5rem;
@@ -74,4 +77,14 @@ padding: 0.3rem;
     color: #fff;
     cursor: pointer;
     border-radius: 5px;
+    width: 100%;
+}
+
+.poster-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.poster-img img{
+    width: 100%;
 }
