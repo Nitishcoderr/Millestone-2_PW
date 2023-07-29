@@ -19,7 +19,7 @@ const Todo = () => {
     const [items, setItems] = useState(getLocalData())
     const [isEditItem, setIsEditItem] = useState("")
     const [toggleButton, setToggleButton] = useState(false)
-    const [status, setStatus] = useState("Pending")
+
 
     // add the items function
     const addItem = () =>{
@@ -49,13 +49,18 @@ const Todo = () => {
         }
     }
     // Status Update
-    const updateStatus = () =>{
-        if(status === "Pending"){
-            setStatus("Completed")
-        }
-        else if(status === "Completed"){
-            setStatus("Pending")
-        }
+    const updateStatus = (index) =>{
+        setItems((prevItems)=>
+        prevItems.map((item,i)=>{
+            if(i ===index){
+                return {
+                    ...item,
+                    status:item.status === "Pending" ? "Completed" : "Pending",
+                };
+            }
+            return item;
+        })
+        )
     }
     // edit function addeing
     const editElem = (index) =>{
@@ -106,8 +111,8 @@ const Todo = () => {
                   return (
                       <div className="eachItem" key={curElem.id}>
                   <h3> {index+1} . {curElem.name}</h3>
-                  <h1> <span>Status :</span> {status}</h1>
-                    <button onClick={()=>updateStatus()}>Update Status</button>
+                  <h1> <span>Status :</span> {curElem.status}</h1>
+                    <button onClick={()=>updateStatus(index)}>Update Status</button>
                   <div className="todo-btn">
                   <button onClick={()=> editElem(curElem.id)}>Edit</button>
                   <button onClick={()=>deleteItems(curElem.id)}>Remove</button>
