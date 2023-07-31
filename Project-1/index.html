@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOG</title>
+    <script src="https://kit.fontawesome.com/130f98046d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Navbar-section -->
+    <nav>
+        <p>Nitish's Blog</p>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"><i class="fa-solid fa-plus"></i></button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Submit query</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form id="addBlogModal">
+                    <div class="mb-3">
+                      <input type="url" class="form-control" id="posterUrl" placeholder="Poster URL:">
+                    </div>
+                    <div class="mb-3">
+                      <input type="text" class="form-control" id="title" placeholder="Title..">
+                    </div>
+                    <div class="mb-3">
+                      <input class="form-control" id="description" placeholder="Description..."></input>
+                    </div>
+                    <div class="mb-3">
+                      <textarea class="form-control" id="summary" rows="5" placeholder="Write..."></textarea>
+                    </div>
+                    <!-- Move the "addBlogBtn" button inside the form -->
+                    <button type="submit" id="addBlogBtn" class="send-btn">ADD BLOG</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+    </nav>
+    <!-- main-section -->
+    <main>
+        <section class="main-card">
+            <!-- BLog card will come -->
+            
+        </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</html>

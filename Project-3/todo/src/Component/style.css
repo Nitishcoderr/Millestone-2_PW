@@ -13,7 +13,7 @@ html {
 
 .main-div {
   min-height: 100vh;
-  background: #060822;
+  background: #680368;
   display: flex;
   justify-content: center;
   /* align-items: center; */
@@ -103,7 +103,7 @@ input:focus {
   margin-left: 1rem;
   min-width: 40rem;
   word-break: break-word;
-  background: rgb(85, 41, 220);
+  background: rgb(33 19 74);
   display: flex;
   justify-content: space-between;
   /* align-items: center; */
@@ -116,6 +116,12 @@ input:focus {
   color: #fff;
   text-align: left;
   margin: 20px 0;
+}
+.showItems .eachItem h1 {
+    color: white;
+    margin: 0.5rem 0;
+    text-align: left;
+    margin: 20px 0;
 }
 
 
@@ -153,29 +159,18 @@ input:focus {
     border-radius: 10px;
     color: white;
     cursor: pointer;
-    background-color: purple;
+    background-color: #1d3ca3eb;
     font-weight: 700;
     outline: none;
     border: none;
+    font-size: 1.5rem;
 }
-
-/* .eachItem:hover .fa-trash-alt {
-  color: rgb(214, 47, 61);
-}
-
-.eachItem:hover .fa-edit {
-  color: rgb(100, 214, 47);
-}
-
-.eachItem:hover h3 {
-  color: rgb(85, 41, 220);
-} */
 
 .btn {
   letter-spacing: 0.1em;
   cursor: pointer;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 900;
   line-height: 45px;
   max-width: 160px;
   position: relative;
@@ -186,46 +181,3 @@ input:focus {
 .btn:hover {
   text-decoration: none;
 }
-
-/* .effect04 {
-  --uismLinkDisplay: var(--smLinkDisplay, inline-flex);
-  display: var(--uismLinkDisplay);
-  color: #000;
-  outline: solid 2px #000;
-  position: relative;
-  transition-duration: 0.4s;
-  overflow: hidden;
-}
-
-.effect04::before,
-.effect04 span {
-  margin: 0 auto;
-  transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
-  transition-duration: 0.4s;
-}
-
-.effect04:hover {
-  background-color: rgb(85, 41, 220);
-} */
-
- /* .effect04:hover span {
-  -webkit-transform: translateY(-400%) scale(-0.1, 20);
-  transform: translateY(-400%) scale(-0.1, 20);
-}
-
-.effect04::before {
-  content: attr(data-sm-link-text);
-  color: #fff;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  -webkit-transform: translateY(500%) scale(-0.1, 20);
-  transform: translateY(500%) scale(-0.1, 20);
-}
-
-.effect04:hover::before {
-  letter-spacing: 0.05em;
-  -webkit-transform: translateY(0) scale(1, 1);
-  transform: translateY(0) scale(1, 1);
-}  */
